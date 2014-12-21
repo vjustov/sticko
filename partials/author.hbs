@@ -2,13 +2,16 @@
     <figure class="author-avatar"><img class="avatar-image" src="{{author.image}}" alt=""></figure>
     <header class="author-name">{{author.name}}</header>
     <p class="author-bio">{{author.bio}}</p>
+    {{#if author.location}} <p><small>{{author.location}}</small></p> {{/if}}
+    <br>
     <h5>Projects I'm author of:</h5>
     <ul>
-        <li><a href="https://github.com/vjustov/grunt-sinatra">grunt-sinatra</a><li>
+        <li><a href="https://github.com/vjustov/grunt-sinatra">grunt-sinatra</a></li>
+        <li><a href="https://github.com/vjustov/thumbor-versionable">thumbor-versionable</a></li>
     </ul>
     <h5>Projects I've contributed to:</h5>
     <ul>
-        <li><a href="https://github.com/maxjacobson/film_snob/">FilmSnob</a><li>
+        <li><a href="https://github.com/maxjacobson/film_snob">FilmSnob</a></li>
+        <li><a href="https://github.com/sugar-framework/sugar">sugar-framework</a></li>
     </ul>
-    {{#if author.location}} <p><small>{{author.location}}</small></p> {{/if}}
 </div>
